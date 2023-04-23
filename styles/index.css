@@ -1,0 +1,43 @@
+body {
+    background-color: #F2E3DB;
+    color: #263A29;
+}
+
+img {
+    border-radius: 45%;
+    max-width: 20%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #263A29;
+}
+
+header h1 {
+    color: #F2E3DB;
+    margin: 5%;
+}
+
+main {
+    text-align: center;
+}
+
+main ul {
+    display: inline-block;
+}
+
+main ul li {
+    text-align: left;
+}
+
+footer {
+    text-align: center;
+    padding: 2px;
+    background-color: #263A29;
+    color: #F2E3DB;
+}
+
+a {
+    color: #E86A33;
+}
