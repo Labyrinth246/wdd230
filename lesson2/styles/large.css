@@ -1,0 +1,11 @@
+@media only screen and (min-width: 64em) {
+    #container {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        justify-items: center;
+    }
+    #hicks {
+        grid-row: 1;
+        grid-column: 3;
+    }
+}

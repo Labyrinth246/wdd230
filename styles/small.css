@@ -8,49 +8,50 @@ body {
 }
 
 img {
+    padding: 10px;
     border-radius: 50%;
-    width: 15%;
+    width: 100px;
+    height: 100px;
 }
 
 header {
     display: flex;
     justify-content: center;
     background-color: #263A29;
-    width: 60%;
+    width: 100%;
     border-radius: 30px;
 }
 
 header h1 {
     color: #F2E3DB;
     margin: 5%;
+    font-size: x-large;
 }
 
 main {
     text-align: center;
 }
 main h2 {
-    font-size: 30px;
+    font-size: 20px;
     text-decoration: underline;
 }
 
 main ul {
+    list-style: none;
     display: inline-block;
 }
 
 main ul li {
     text-align: left;
-    font-size: 20px;
+    font-size: 12px;
+    padding: 5px;
 }
 
 footer {
-    width: 60%;
+    width: 100%;
     border-radius: 10px;
     text-align: center;
     padding: 2px;
     background-color: #263A29;
     color: #F2E3DB;
-}
-
-a {
-    color: #E86A33;
 }
