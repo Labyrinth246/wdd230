@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="wadth=device-width">
+    <title>Design Principles</title>
+    <meta name="author" content="Spencer Baker">
+    <meta name="description" content="design principles">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html"><img id="logo" src="images/myLogo.png" alt="logo"></a>
+        <div id="smallViewBar"></div>
+        <nav>
+            <ul id="navbar">
+                <li><a href="index.html"><button>Concept</button></a></li>
+                <li><a href="target-audience.html"><button>Audience</button></a></li>
+                <li><a href="design.html"><button>Design</button></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>General Design</h1>
+
+        <h2>Color Scheme</h2>
+        <img id="colors" src="images/officialColors.png" alt="color pallete">
+        <h4>White - #FFFDFD: Text</h3>
+        <h4>Gunmetal - #1D2731: Headers and Footers(background)</h3>
+        <h4>Gold (metallic) - #D9B310: Highlights/Outlines</h3>
+        <h4>Blue (NCS) - #328CC1: Minimal Transitions</h3>
+        <h4>Indigo Dye - #0B3C5D: Main Background</h3>
+
+        <div id="mainBar"></div>
+
+        <h2>Typography</h2>
+
+        <h3>Site Header :: Merriweather, serif</h3>
+        <h1 class="merri">Site Header</h1>
+        <h3>Paragraph Text :: Roboto Slab, serif</h3>
+        <p id="roboto">Whereas disregard and contempt for human rights have resulted</p>
+        <h3>Heading 2 and 3 :: Merriweather, serif</h3>
+        <h2 class="merri">Whereas disregard and contempt for human rights have resulted</h2>
+        
+    </main>
+
+    <footer>
+        <p>
+            @ <span id="currentDate"></span> | Spencer Baker | Last Updated: <span id="lastEdit"></span>
+        </p>
+    </footer>
+    <script src="../scripts/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+body {
+    background-color: #0B3C5D;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+#logo {
+    margin-top: 10px;
+    width:120px;
+    height: 120px;
+}
+
+#proLogo {
+    width:120px;
+    height: 120px;
+}
+
+#colors {
+    width: 80%;
+    border: 3px solid black;
+}
+
+a {
+    height: 8em;
+}
+
+#logo:hover {
+    width: 118px;
+    height: 118px;
+    border: 1px solid #D9B310;
+    border-radius: 15%;
+    transition-duration: .5s;
+}
+
+main {
+    text-align: center;    
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1D2731;
+    color: #F0F0F0;
+    width: 100%;
+    align-items: center;
+    border: 2px solid #D9B310;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: #1D2731;
+    color: #F0F0F0;
+    border: 2px solid #D9B310;
+}
+
+nav {
+    height: 9em;
+}
+
+#smallViewBar {
+    padding: 10px;
+    width: 80%;
+    border: 2px solid #D9B310;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+#navbar {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    list-style: none;
+}
+
+button {
+    background-color: #0B3C5D;
+    color: #FFFDFD;
+    border: 2px solid #0B3C5D;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+
+button:hover {
+    padding: 3px;
+    border-radius: 15%;
+    transition-duration: .5s;
+    cursor: pointer;
+    box-shadow: 2px 3px 4px 2px #328CC1;
+}
+
+p {
+    padding: 10px;
+    line-height: 25px;
+}
+
+h3 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.under {
+    text-decoration: underline;
+}
+
+#mainBar {
+    padding: 10px;
+    width: 100%;
+    border: 2px solid #D9B310;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+.merri {
+    font-family: 'Merriweather', serif;
+}
+
+#roboto {
+    font-family: 'Roboto Slab', serif;
+}
