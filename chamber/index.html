@@ -3,12 +3,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="wadth=device-width">
-    <title>Design Principles</title>
+    <title>Fayetteville Chamber of Commerce</title>
     <meta name="author" content="Spencer Baker">
-    <meta name="description" content="design principles">
+    <meta name="description" content="Fayetteville, Arkansas Chamber of Commerce Website">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto+Slab&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -17,24 +20,71 @@
 <body>
     <header>
         <a id="navLogo" href="../index.html"><img id="logo" src="images/myLogo.png" alt="logo"></a>
-        <div id="smallViewBar"></div>
-        <nav>
-            <ul id="navbar">
-                <li><a href="index.html"><button>Concept</button></a></li>
-                <li><a href="target-audience.html"><button>Audience</button></a></li>
-                <li><a href="design.html"><button>Design</button></a></li>
-            </ul>
-        </nav>
+        <h1 id="title">Fayetteville Chamber of Commerce</h1>
+        <span id="currentDate"></span>
+        <div></div>
+        <div id="hamNav">
+            <nav id="nav">
+                <div id="navbar">
+                    <ul class="dropdown">
+                        <li><a href="index.html" id="home"><button>Home</button></a></li>
+                            <ul id="homeUl" class="dropdown-content">
+                                <li><a href="">Assignment Portal</a></li>
+                                <li><a href="">Chamber Home</a></li>
+                            </ul>
+                    </ul>
+                    <ul class="dropdown">
+                        <li><a href="news.html" id="news"><button>News</button></a></li>
+                            <ul id="newsUl" class="dropdown-content">
+                                <li><a href="">Chamber News</a></li>
+                                <li><a href="">Local News</a></li>
+                            </ul>
+                    </ul>
+                    <ul class="dropdown">
+                        <li><a href="events.html" id="events"><button>Events</button></a></li>
+                            <ul id="eventsUl" class="dropdown-content">
+                                <li><a href="">Calendar</a></li>
+                                <li><a href="">Annual Events</a></li>
+                            </ul>
+                    </ul>
+                    <ul class="dropdown">
+                        <li><a href="membership.html" id="member"><button>Members</button></a></li>
+                            <ul id="memberUl" class="dropdown-content">
+                                <li><a href="">Member Login</a></li>
+                                <li><a href="">Become a Member</a></li>
+                                <li><a href="">Member Benefits</a></li>
+                                <li><a href="">Member Directory</a></li>
+                            </ul>
+                    </ul>
+                    <ul class="dropdown">
+                        <li><a href="about.html" id="about"><button>About Us</button></a></li>
+                            <ul id="aboutUl" class="dropdown-content">
+                                <li><a href="">Our Purpose</a></li>
+                                <li><a href="">Board Members</a></li>
+                            </ul>
+                    </ul>
+                    <ul class="dropdown">
+                        <li><a href="contact.html" id="contact"><button>Contact</button></a></li>
+                            <ul id="contactUl" class="dropdown-content">
+                                <li><a href="">Social Media</a></li>
+                            </ul>
+                    </ul>
+                    </div>
+            </nav>
+            <div id="overlay"></div>
+            <a href="javascript:void(0);" id="icon" onclick="hamNav()">
+                <i class="fa fa-bars fa-2x"></i> 
+            </a>
+        </div>
+        
     </header>
 
     <main>
     </main>
 
     <footer>
-        <p>
-            @ <span id="currentDate"></span> | Spencer Baker | Last Updated: <span id="lastEdit"></span>
-        </p>
     </footer>
+
     <script src="scripts/index.js"></script>
 </body>
 </html>
