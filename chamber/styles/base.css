@@ -5,14 +5,19 @@ body {
     align-items: center;
     flex-direction: column;
     font-family: 'Roboto Slab', serif;
+    overflow-x: hidden;
 }
 
 main {
     text-align: center;
-    height: 2000px;
 }
 
+
+/* Footer */
+
 footer {
+    display: grid;
+    grid-template-columns: 50% 50%;
     width: 100%;
     text-align: center;
     background-color: #1D2731;
@@ -20,7 +25,13 @@ footer {
     border: 2px solid #D9B310;
 }
 
+#copyright {
+    grid-column: 1/3;
+}
 
+#fLogo {
+    width: 150px;
+}
 
 
 
@@ -75,6 +86,20 @@ img {
     padding: 3px;
     grid-row: 2;
     grid-column: 1/4;
+    width: 100px;
+}
+
+#socialDiv {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    grid-row: 2;
+    grid-column: 3/4;
+}
+
+.social {
+    width: 20px;
+    height: 20px;
 }
 
 
@@ -107,15 +132,16 @@ h3 {
     border-top: none;
     border-right: none;
     border-left: none;
+    grid-column: 1/4;
+    justify-self: center;
 }
 
 #nav {
-
     display: none;
-    grid-template-columns: 1fr;
     visibility: hidden;
     position: absolute;
     margin-top: 10%;
+    z-index: 2;
 }
 
 #overlay {
@@ -127,7 +153,7 @@ h3 {
     opacity: 0;
     visibility: hidden;
     background: #1D2731;
-    z-index: -1;
+    z-index: 1;
     border: 2px solid #D9B310;
 }
 
@@ -137,6 +163,7 @@ h3 {
     position: absolute;
     right: 10px;
     top: 10px;
+    z-index: 1;
   }
 
 #navbar {
@@ -149,24 +176,22 @@ h3 {
     height: 2em;
 }
 
-
-
-
 button {
     background-color: #0B3C5D;
     color: #FFFDFD;
     border: 2px solid #0B3C5D;
     border-radius: 5px;
     margin-top: 8px;
-    width: 100%;
+    width: 100px;
+    padding: 5px;
 }
 
 button:hover {
     border: none;
-    padding: 3px;
+    padding: 6px;
     border-radius: 15%;
     transition-duration: 0.25s;
-    width: 100%;
+    margin-right: -20px;
     cursor: pointer;
     background: linear-gradient(to left, #328CC1, #0B3C5D);
     box-shadow: 2px 3px 4px 2px #328CC1;
@@ -234,4 +259,55 @@ button:hover {
 
 .dropdown:hover #contactUl {
     visibility: visible;
+}
+
+
+
+/*Main Content*/
+
+
+
+/*Banner and Action*/
+
+#action p {
+    width: 50%;
+    position: absolute;
+    padding: 8px;
+    margin-left: 3%;
+    margin-top: 15%;
+}
+
+#background {
+    width: 45%;
+    height: 6%;
+    position: absolute;
+    background-color: #1D2731;
+    padding: 8px;
+    margin-left: 6%;
+    margin-top: 15%;
+    border-radius: 10px;
+    opacity: 0.6;
+}
+
+
+/* Chamber and Local News */
+
+
+
+/* Member Join and Member Info */
+
+
+
+/* Chamber Events */
+
+
+
+/* Commpany Spotlight */
+
+
+
+/* Weather */
+
+#weatherDays {
+    list-style: none;
 }

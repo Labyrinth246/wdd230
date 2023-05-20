@@ -6,15 +6,42 @@ function hamNav() {
     var x = document.getElementById("nav");
     if (x.style.marginRight === "-250px") {
       x.style.display = "grid";
-      x.style.visibility = 'visible'
+      x.style.visibility = 'visible';
       x.style.marginRight = "0px";
       overlay.style.visibility = "visible";
       overlay.style.opacity = "80%";
     } else {
       overlay.style.visibility = "hidden"
       x.style.marginRight = "-250px";
-      x.style.display = "none";
       x.style.visibility = 'hidden';
       overlay.style.opacity = "0";
     }
   }
+
+if (matchMedia) {
+  let mq = window.matchMedia("(min-width: 45em)");
+  mq.addListener(checkWidth);
+  checkWidth(mq);
+}
+
+
+function checkWidth(mq) {
+  var x = document.getElementById("nav");
+  if (mq.matches) {
+    x.style.display = "flex";
+    x.style.visibility = 'visible';
+    x.style.justifyContent = 'center';
+    x.style.alignItems = 'center';
+    x.style.margin = '0px';
+    x.style.position = 'relative';
+  } else {
+    x.style.display = "none";
+    x.style.visibility = 'hidden';
+    x.style.position = 'absolute';
+    x.style.marginTop = '10%';
+  }
+};
+
+document.getElementById("lastEdit").innerHTML = new Date(document.lastModified).toLocaleString();
+
+document.getElementById("date").innerHTML = new Date().getFullYear();

@@ -1,24 +1,22 @@
 @media only screen and (min-width: 64em) {
-    #smallViewBar {
-        border: 2px solid #D9B310;
-        border-bottom: none;
-        border-top: none;
-        border-right: none;
-        width: 1%;
-        margin-left: 30px;
-        height: 80px;
+    #socialDiv {
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        margin-right: 50px;
     }
 
-    header {
-        flex-direction: row;
+    .social {
+        width: 40px;
+        height: 40px;
     }
 
-    #navbar {
-        margin-top: 50px;
+    #logo {
+        margin-top: 20px;
+        width: 125px;
     }
 
-    #personas {
-        display: grid;
-        grid-template-columns: 50% 50%;
+    #logo:hover {
+        width: 127px;
     }
 }
