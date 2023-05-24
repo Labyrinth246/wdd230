@@ -85,72 +85,81 @@
 
 
     <main>
+        <div class="banner" id="banner"></div>
+
         <div id="action">
             <div id="background"></div>
             <p>Support, Grow, Develop, Advocate: <br>for Arkansas businesses</p>
-            <img id="banner" src="images/banner.jpg" alt="Fayetteville Banner image">
+            <img id="bannerOne" src="images/pan.jpg" alt="Fayetteville Banner image">
         </div>
 
         <div id="chamberNews">
-            <h2>Recent Chamber News</h2>
+            <h2 id="newsTitle">News</h2>
 
-            <div id="localNews">
+            <div class="news" id="localNews">
                 <h3>Local News</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. asdlfkjhasd ;fjha s;dkfjha sldfkj asldkfjh asdlkf jahsdlkfjah dslkfja hsdlfkja lkajhsdflkjh alaskdjhf lkajhf jh fjfhdjh hf hdjhjhf jh juhrh i irf.</p>
             </div>
 
-            <div id="chNews">
+            <div class="news" id="chNews">
                 <h3>Chamber News</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. asdlfkjhasd ;fjha s;dkfjha sldfkj asldkfjh asdlkf jahsdlkfjah dslkfja hsdlfkja lkajhsdflkjh alaskdjhf lkajhf jh fjfhdjh hf hdjhjhf jh juhrh i irf.</p>
             </div>
         </div>
 
         <div id="joinChamber">
-            <h2>Member Information</h2>
-
-            <div id="joinNow">
-                <h3>Join Now!</h3>
+            <h2 id="joinTitle">Member Information</h2>
+            <a id="joinAButton" href=""><button id="joinButton">Join Now</button></a>
+            <h3 id="joinTitleTwo">Why Join?</h3>
+            
+            <div id="joinPic">
+                <img id="joinPicture" src="images/join.jpg" alt="teamwork picture"> 
+                <img id="joinPicLarge" src="images/joinLarge.jpg" alt="teamwork picture">
             </div>
-
+            
             <div id="memBenefit">
-                <h3>Why Join?</h3>
+                <p>Members of the Chamber get many benefits from joining including, business support, adovcation, connections, education, credibility, marketing, netowoking, and even referrals.</p>
+                <p>To see a complete list of member benefits, go to our members page.</p>
             </div>
         </div>
 
         <div id="chamberEvents">
             <h2>-- Events --</h2>
+            <img id="parade" src="images/parade.png" alt="parade image">
+            <p id="eventP">Upcoming Liberty Parade, celebrating our veterans. Come and support your local businesses! <a id="moreInfo" href="">more info ...</a></p>
         </div>
 
         <div id="spotlight">
+            <h2>A Special Thanks to our Partners</h2>
+            <div id="spotlightContainer">
+                <div class="comp" id="compOne">
+                    <h3>The Bank of Fayetteville/FM Bank</h3>
+                    <a href="https://www.mebanking.com/"><img class="spotlightImg" id="bank" src="images/bank.jpg" alt="mebanking logo"></a>
+                </div>
 
-            <div id="compOne">
+                <div class="comp" id="compTwo">
+                    <h3>Academy Sports & Outdoors</h3>
+                    <a href="https://www.academy.com/storelocator/arkansas/fayetteville/store-0180"><img class="spotlightImg" id="academy" src="images/academy.png" alt="academy sports and outdoors logo"></a>
+                </div>
+
+                <div class="comp" id="compThree">
+                    <h3>Walmart</h3>
+                    <a href="https://www.walmart.com/"><img class="spotlightImg" id="walmart" src="images/walmart-logo.png" alt="walmart logo"></a>
+                </div>
             </div>
-
-            <div id="compTwo">
-            </div>
-
-            <div id="compThree">
-            </div>
-
         </div>
 
         <div id="weather">
-            <div id="weatherTitle">
-                <h3>Weather</h3>
-                <h4>Fayetteville</h4>
-            </div>
+            <h2 id="weatherTitle">Weather</h2>
 
-            <div id="weatherLogo"></div>
+            <img id="weatherImage" src="images/weather.png" alt="weather cloud image">
+            <h3 id="degrees">33°C</h3>
 
-            <div id="days">
-                <ul id="weatherDays">
-                    <li>Monday</li>
-                    <li>Tuesday</li>
-                    <li>Wednesday</li>
-                    <li>Thursday</li>
-                    <li>Friday</li>
-                    <li>Saturday</li>
-                    <li>Sunday</li>
-                </ul>
-            </div>
+            <h4 id="conditions">Partly Cloudy</h4>
+            <div id="weatherBar"></div>
+            <p id="wind">Wind Speed: <br> Wind Chill:</p>
+            <p><span>2.5 km/h</span><br><span>N/A</span></p>
+            
         </div>
     </main>
 

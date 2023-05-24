@@ -8,9 +8,7 @@ body {
     overflow-x: hidden;
 }
 
-main {
-    text-align: center;
-}
+
 
 
 /* Footer */
@@ -53,6 +51,7 @@ header {
     grid-row: 1;
     grid-column: 2/4;
     margin-right: 15%;
+    height: 100%;
 }
 
 #hamNav {
@@ -265,16 +264,30 @@ button:hover {
 
 /*Main Content*/
 
-
+main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /*Banner and Action*/
+
+.banner{
+    display: none;
+    padding: 5px;
+    position: relative;
+    background-color: #0B3C5D;
+    width: 100%;
+    right: 0;
+}
 
 #action p {
     width: 50%;
     position: absolute;
     padding: 8px;
     margin-left: 3%;
-    margin-top: 15%;
+    margin-top: 10%;
 }
 
 #background {
@@ -284,7 +297,7 @@ button:hover {
     background-color: #1D2731;
     padding: 8px;
     margin-left: 6%;
-    margin-top: 15%;
+    margin-top: 10%;
     border-radius: 10px;
     opacity: 0.6;
 }
@@ -292,22 +305,188 @@ button:hover {
 
 /* Chamber and Local News */
 
+#chamberNews {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15% 85%;
+    background-color: #FFFDFD;
+    color:#1D2731;
+    border: 10px solid #0B3C5D;
+}
+
+#newsTitle {
+    grid-column: 1/3;
+}
+
+.news {
+    padding: 15px;
+}
 
 
 /* Member Join and Member Info */
 
+#joinChamber {
+    width: 90%;
+    display: grid;
+    grid-template-rows: 12% 12% 12% 60%;
+    border-radius: 20px;
+    background-color: #1D2731;
+}
+
+#joinTitle {
+    grid-column: 1/3;
+}
+
+#joinAButton {
+    grid-column: 1/3;
+    margin: 0px;
+}
+
+#joinButton {
+    width: 165px;
+    height: 35px;
+    background-color: green;
+    border: 2px solid #1D2731;
+    border-radius: 10px;
+}
+
+#joinButton:hover {
+    border-radius: 15px;
+    transition-duration: 0.5s;
+    margin-right: 0px;
+    cursor: pointer;
+    background: linear-gradient(to left, green, greenyellow, green);
+    box-shadow: 2px 3px 4px 2px #1D2731;
+}
+
+#joinPicture {
+    height: 96%;
+    width: 96%;
+    object-fit: cover;
+    margin: 8px;
+}
+
+#joinPic {
+    grid-row: 3/5;
+}
+
+#memBenefit {
+    grid-column: 2;
+    grid-row: 4/5;
+    padding: 10px;
+}
+
+#joinPicLarge {
+    display: none;
+}
 
 
 /* Chamber Events */
 
+#chamberEvents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 62%;
+    border: 10px solid #328CC1;
+    margin-top: 25px;
+}
+
+#parade {
+    width: 90%;
+}
+
+#eventP {
+    width: 90%;
+}
+
+#moreInfo {
+    color: #D9B310;
+}
 
 
 /* Commpany Spotlight */
 
+#spotlight {
+    background-color: #1D2731;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 25px;
+}
+
+#spotlightContainer {
+    margin: 20px;
+    background-color: #FFFDFD;
+    color: #1D2731;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spotlightImg {
+    width: 75%;
+}
+
+.comp {
+    margin: 20px;
+}
+
+.spotlightImg:hover {
+    box-shadow: 2px 3px 4px 2px #1D2731;
+    transition: 0.5s;
+}
 
 
 /* Weather */
 
-#weatherDays {
-    list-style: none;
+#weather {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: 55%;
+    background-color: #1D2731;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#weatherTitle {
+    grid-column: 1/3;
+    grid-row: 1;
+}
+
+#weatherImage {
+    grid-column: 1;
+}
+
+#degrees {
+    grid-column: 2/3;
+    font-size: xx-large;
+}
+
+#conditions {
+    grid-row: 3;
+    grid-column: 1/3;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+#wind {
+    grid-column: 1/2;
+}
+
+#windResult {
+    grid-column: 2/3;
+}
+
+#weatherBar {
+    width: 80%;
+    border: 2px solid #D9B310;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    grid-column: 1/3;
+    justify-self: center;
 }

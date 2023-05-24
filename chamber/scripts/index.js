@@ -45,3 +45,14 @@ function checkWidth(mq) {
 document.getElementById("lastEdit").innerHTML = new Date(document.lastModified).toLocaleString();
 
 document.getElementById("date").innerHTML = new Date().getFullYear();
+
+
+var currentDay = new Date().getDay();
+
+//Check if it's Monday or Tuesday
+if (currentDay === 1 || currentDay === 2) {
+
+    var banner = document.getElementById('banner');
+    banner.style.display = 'inline';
+    banner.innerHTML = '🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.';
+}
