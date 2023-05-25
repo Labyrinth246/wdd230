@@ -19,7 +19,7 @@
 </head>
 <body>
     <header>
-        <a id="navLogo" href="../index.html"><img id="logo" src="images/myLogo.png" alt="logo"></a>
+        <a id="navLogo" href="../index.html"><img id="logo" src="images/logo.webp" alt="logo"></a>
         <h1 id="title">Fayetteville Chamber of Commerce</h1>
         <span id="currentDate"></span>
         <div></div>
@@ -90,7 +90,12 @@
         <div id="action">
             <div id="background"></div>
             <p>Support, Grow, Develop, Advocate: <br>for Arkansas businesses</p>
-            <img id="bannerOne" src="images/pan.jpg" alt="Fayetteville Banner image">
+            <figure id="actionFig">
+                <img id="bannerOne" src="images/wdd230-org.jpg" sizes="100vw" alt="Fayetteville Banner image"
+                srcset="images/1920x1280wdd230-org.jpg 1920w,
+                images/850x566wdd230-org.jpg 850w,
+                images/480x320wdd230-org.jpg 480w">
+            </figure>
         </div>
 
         <div id="chamberNews">
@@ -113,8 +118,8 @@
             <h3 id="joinTitleTwo">Why Join?</h3>
             
             <div id="joinPic">
-                <img id="joinPicture" src="images/join.jpg" alt="teamwork picture"> 
-                <img id="joinPicLarge" src="images/joinLarge.jpg" alt="teamwork picture">
+                    <img id="joinPicture" src="images/join.jpg" alt="teamwork picture"> 
+                    <img id="joinPicLarge" src="images/joinLarge.jpg" alt="teamwork picture">
             </div>
             
             <div id="memBenefit">
@@ -125,7 +130,7 @@
 
         <div id="chamberEvents">
             <h2>-- Events --</h2>
-            <img id="parade" src="images/parade.png" alt="parade image">
+            <figure id="paradeFigure"><img id="parade" src="images/parade.jpg" alt="parade image"></figure>
             <p id="eventP">Upcoming Liberty Parade, celebrating our veterans. Come and support your local businesses! <a id="moreInfo" href="">more info ...</a></p>
         </div>
 
@@ -134,17 +139,17 @@
             <div id="spotlightContainer">
                 <div class="comp" id="compOne">
                     <h3>The Bank of Fayetteville/FM Bank</h3>
-                    <a href="https://www.mebanking.com/"><img class="spotlightImg" id="bank" src="images/bank.jpg" alt="mebanking logo"></a>
+                    <a class="spotImg" href="https://www.mebanking.com/"><img class="spotlightImg" id="bank" src="images/bank.jpg" alt="mebanking logo"></a>
                 </div>
 
                 <div class="comp" id="compTwo">
                     <h3>Academy Sports & Outdoors</h3>
-                    <a href="https://www.academy.com/storelocator/arkansas/fayetteville/store-0180"><img class="spotlightImg" id="academy" src="images/academy.png" alt="academy sports and outdoors logo"></a>
+                    <a class="spotImg" href="https://www.academy.com/storelocator/arkansas/fayetteville/store-0180"><img class="spotlightImg" id="academy" src="images/academy.jpg" alt="academy sports and outdoors logo"></a>
                 </div>
 
                 <div class="comp" id="compThree">
                     <h3>Walmart</h3>
-                    <a href="https://www.walmart.com/"><img class="spotlightImg" id="walmart" src="images/walmart-logo.png" alt="walmart logo"></a>
+                    <a class="spotImg" href="https://www.walmart.com/"><img class="spotlightImg" id="walmart" src="images/walmart-logo.jpg" alt="walmart logo"></a>
                 </div>
             </div>
         </div>
@@ -153,19 +158,19 @@
             <h2 id="weatherTitle">Weather</h2>
 
             <img id="weatherImage" src="images/weather.png" alt="weather cloud image">
-            <h3 id="degrees">33°C</h3>
+            <h3 id="degrees"><span id="temp">45</span>°F</h3>
 
             <h4 id="conditions">Partly Cloudy</h4>
             <div id="weatherBar"></div>
             <p id="wind">Wind Speed: <br> Wind Chill:</p>
-            <p><span>2.5 km/h</span><br><span>N/A</span></p>
+            <p><span id="windSpeed">5</span> mph<br><span id="result"></span>°F</p>
             
         </div>
     </main>
 
 
     <footer>
-        <a id="footLogo" href="../index.html"><img id="fLogo" src="images/myLogo.png" alt="logo"></a>
+        <a id="footLogo" href="../index.html"><img id="fLogo" src="images/logo.webp" alt="logo"></a>
 
         <div id="contactInfo">
             <p>Call Us: (777)-777-7777</p>
@@ -184,5 +189,6 @@
     </footer>
 
     <script src="scripts/index.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>

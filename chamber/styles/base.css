@@ -32,7 +32,12 @@ footer {
 }
 
 #fLogo {
-    width: 150px;
+    width: 100%;
+}
+
+#footLogo {
+    max-width: 10em;
+    justify-self: center;
 }
 
 
@@ -286,6 +291,19 @@ main {
     right: 0;
 }
 
+#bannerOne {
+    width: 100%;
+}
+
+#action {
+    width: 100%;
+    display: flex;
+}
+
+#actionFig {
+    width: 100%;
+}
+
 #action p {
     width: 50%;
     position: absolute;
@@ -397,7 +415,11 @@ main {
 }
 
 #parade {
-    width: 90%;
+    width: 100%;
+}
+
+#paradeFigure {
+    min-width: 10em;
 }
 
 #eventP {
@@ -430,7 +452,11 @@ main {
 }
 
 .spotlightImg {
-    width: 75%;
+    width: 100%;
+}
+
+.spotImg {
+    max-width: 10em;
 }
 
 .comp {
