@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="wadth=device-width">
+    <title>Fayetteville Chamber of Commerce Discover Page</title>
+    <meta name="author" content="Spencer Baker">
+    <meta name="description" content="Discover page for the Fayetteville, Arkansas Chamber of Commerce Website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+    <header>
+        <a id="navLogo" href="../index.html"><img id="logo" src="images/logo.webp" alt="logo"></a>
+        <h1 id="title">Fayetteville Chamber of Commerce</h1>
+        <span id="currentDate"></span>
+        <div></div>
+        <div id="hamNav">
+            <nav id="nav">
+                <div id="navbar">
+                    <ul class="dropdown">
+                        <li><a href="index.html" id="home"><button>Home</button></a></li>
+                            <ul id="homeUl" class="dropdown-content">
+                                <li><a href="">Assignment Portal</a></li>
+                                <li><a href="">Chamber Home</a></li>
+                            </ul>
+                    </ul>
+                    <ul class="dropdown">
+                        <li><a href="news.html" id="news"><button>News</button></a></li>
+                            <ul id="newsUl" class="dropdown-content">
+                                <li><a href="">Chamber News</a></li>
+                                <li><a href="">Local News</a></li>
+                            </ul>
+                    </ul>
+                    <ul class="dropdown">
+                        <li><a href="events.html" id="events"><button>Events</button></a></li>
+                            <ul id="eventsUl" class="dropdown-content">
+                                <li><a href="">Calendar</a></li>
+                                <li><a href="">Annual Events</a></li>
+                            </ul>
+                    </ul>
+                    <ul class="dropdown">
+                        <li><a href="membership.html" id="member"><button>Members</button></a></li>
+                            <ul id="memberUl" class="dropdown-content">
+                                <li><a href="">Member Login</a></li>
+                                <li><a href="">Become a Member</a></li>
+                                <li><a href="">Member Benefits</a></li>
+                                <li><a href="">Member Directory</a></li>
+                            </ul>
+                    </ul>
+                    <ul class="dropdown">
+                        <li><a href="about.html" id="about"><button>About Us</button></a></li>
+                            <ul id="aboutUl" class="dropdown-content">
+                                <li><a href="">Our Purpose</a></li>
+                                <li><a href="">Board Members</a></li>
+                            </ul>
+                    </ul>
+                    <ul class="dropdown">
+                        <li><a href="contact.html" id="contact"><button>Contact</button></a></li>
+                            <ul id="contactUl" class="dropdown-content">
+                                <li><a href="">Social Media</a></li>
+                            </ul>
+                    </ul>
+                </div>
+            </nav>
+            <div id="overlay"></div>
+            <a href="javascript:void(0);" id="icon" onclick="hamNav()">
+                <i class="fa fa-bars fa-2x"></i> 
+            </a>
+        </div>
+        <div id="socialDiv">
+            <a class="socialA" href=""><img class="social" src="images/instagram.png" alt="instagram icon"></a>
+            <a class="socialA" href=""><img class="social" src="images/facebook.png" alt="facebook icon"></a>
+            <a class="socialA" href=""><img class="social" src="images/twitter.png" alt="twitter icon"></a>
+        </div>
+    </header>
+
+
+    <main>
+        <h1 id="titleDisc">Discover</h1>
+        <div id="discContainer">
+            <figure>
+                <img src="./images/discover/650x460.jpg"
+                 data-src="images/discover/gardens.jpg"
+                 alt="Botanical Garden of the Ozarks in Fayetteville"
+                 loading="lazy"/>
+                 <figcaption><h3>Botanical Garden of the Ozarks</h3><br>4703 N Crossover Rd, Fayetteville, AR 72764<br>Open Tue, Wed 9am-5pm - Thur-Sun 9am-7pm - Closed Monday</figcaption>
+            </figure>
+
+            <figure>
+                <img src="./images/discover/650x460.jpg"
+                 data-src="./images/discover/lake.jpg"
+                 alt="Lake Fayetteville Park and Trail"
+                 loading="lazy"/>
+                 <figcaption><h3>Lake Fayetteville Park and Trail</h3><br>1153 E Lake Fayetteville Rd, Fayetteville, AR 72764<br>A great lake and park for familiy activities!</figcaption>
+            </figure>
+
+            <figure>
+                <img src="./images/discover/650x460.jpg"
+                 data-src="./images/discover/art.jpg"
+                 alt="Lobby in the Walton Arts Center"
+                 loading="lazy"/>
+                 <figcaption><h3>Walton Arts Center</h3><br>495 W Dickson St, Fayetteville, AR 72701<br>Come and witness performing arts from around the world!</figcaption>
+            </figure>
+
+            <figure>
+                <img src="./images/discover/650x460.jpg"
+                 data-src="./images/discover/stadium.jpg"
+                 alt="Donald W. Reynolds Razorback Stadium"
+                 loading="lazy"/>
+                 <figcaption><h3>Donald W. Reynolds Razorback Stadium</h3><br>350 N Razorback Rd, Fayetteville, AR 72701<br>Come watch some Razorback Football and support our Razorbacks!</figcaption>
+            </figure>
+
+            <figure>
+                <img src="./images/discover/650x460.jpg"
+                 data-src="./images/discover/arcade.jpg"
+                 alt="Arkadia Retrocade"
+                 loading="lazy"/>
+                 <figcaption><h3>Arkadia Retrocade</h3><br>1478 N College Ave, Fayetteville, AR 72703<br>An Arcade for all ages to come and enjoy!</figcaption>
+            </figure>
+        </div>
+    </main>
+
+
+    <footer>
+        <a id="footLogo" href="../index.html"><img id="fLogo" src="images/logo.webp" alt="logo"></a>
+
+        <div id="contactInfo">
+            <p>Call Us: (777)-777-7777</p>
+            <p>fayetteville@archamber.com</p>
+            <a class="socialA" href=""><img class="social" src="images/instagram.png" alt="instagram icon"></a>
+            <a class="socialA" href=""><img class="social" src="images/facebook.png" alt="facebook icon"></a>
+            <a class="socialA" href=""><img class="social" src="images/twitter.png" alt="twitter icon"></a>
+            <a href="https://www.google.com/maps/place/Fayetteville,+AR/@36.0691822,-94.3181683,12z/data=!3m1!4b1!4m6!3m5!1s0x87c96f7b2fb53e9d:0x4519f069fcb4c8cf!8m2!3d36.0626579!4d-94.1605839!16zL20vMHF4aGM">Fayetteville Map</a>
+        </div>
+
+        <div id="smallViewBar"></div>
+
+        <p id="copyright">
+            @<span id="date"></span> Fayetteville Chamber | Spencer Baker | WDD 230 Project |<br> Last Updated: <span id="lastEdit"></span>
+        </p>
+    </footer>
+
+    <script src="scripts/index.js"></script>
+    <script src="scripts/discover.js"></script>
+</body>
+</html>
