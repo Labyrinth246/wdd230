@@ -139,4 +139,16 @@
         
         justify-self: center;
     }
+
+
+
+
+    /*Discover Page*/
+    
+    figure img:hover {
+        width: 102%;
+        border: 1px solid #D9B310;
+        border-radius: 15px;
+        transition: 1s;
+    }
 }
