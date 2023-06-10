@@ -187,4 +187,18 @@
         border-radius: 15px;
         transition: 1s;
     }
+
+
+    /*Join Page*/
+
+    #membershipForm {
+        width: 125%;
+    }
+
+
+    /*Thank you page*/
+
+    #pthanks {
+        font-size: large;
+    }
 }

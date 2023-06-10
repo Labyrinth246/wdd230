@@ -310,6 +310,7 @@ main {
     padding: 8px;
     margin-left: 3%;
     margin-top: 10%;
+    z-index: 1;
 }
 
 #background {
@@ -322,6 +323,7 @@ main {
     margin-top: 10%;
     border-radius: 10px;
     opacity: 0.6;
+    z-index: 1;
 }
 
 
@@ -562,3 +564,75 @@ figcaption {
     margin-top: 9%;
     margin-left: 0.5%;
 }
+
+
+
+/*Join Page*/
+
+  #joinTitle {
+    grid-column: 1/4;
+  }
+  
+  #membershipForm {
+    width: 100%;
+    grid-column: 1/4;
+    margin: 0 auto;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+    font-size: large;
+  }
+  
+  input,
+  textarea,
+  select {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    background: linear-gradient(#328CC1, #0B3C5D);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    color: #F0F0F0;
+  }
+
+  select option {
+    background-color: #0B3C5D;
+  }
+
+  ::placeholder {
+    color: #FFFDFD;
+    opacity: 0.5;
+  }
+  
+  :-ms-input-placeholder {
+    color: #FFFDFD;
+  }
+  
+  ::-ms-input-placeholder {
+    color: #FFFDFD;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  /*Thank you page*/
+
+  .thanks {
+    grid-column: 1/4;
+    padding: 20px;
+  }
+
+  #pthanks {
+    justify-self: center;
+    font-size: medium;
+    width: 50%;
+  }
+
+
+
+  
