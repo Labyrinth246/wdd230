@@ -3,6 +3,7 @@ document.getElementById("currentDate").innerHTML = new Date().toLocaleDateString
 const overlay = document.getElementById("overlay");
 
 function hamNav() {
+    var i = document.getElementById("icon");
     var x = document.getElementById("nav");
     if (x.style.marginRight === "-250px") {
       x.style.display = "grid";

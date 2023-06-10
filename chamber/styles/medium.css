@@ -3,7 +3,7 @@
         display: none;
     }
 
-    #hamNav a#icon {
+    .container {
         display: none;
       }
 
@@ -135,6 +135,10 @@
 
     #joinPic {
         width: 18em;
+    }
+
+    #joinTitleTwo {
+        grid-column: 1;
     }
 
 
