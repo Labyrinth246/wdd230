@@ -5,7 +5,7 @@ const list = document.getElementById("list");
 const button = document.getElementById("but");
 
 button.addEventListener('click', function() {
-    if (input.value != null) {
+    if (input.value != '') {
        const li = document.createElement('li');
        li.textContent = input.value;
 
