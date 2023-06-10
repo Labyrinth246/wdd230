@@ -423,6 +423,11 @@ main {
     display: none;
 }
 
+#joinTitleTwo {
+    grid-column: 1/3;
+    grid-row: 3;
+}
+
 
 /* Chamber Events */
 
@@ -542,8 +547,15 @@ main {
     justify-self: center;
 }
 
+/*Funny image*/
 
+#gif {
+    width: 100%;
+}
 
+#gifPic {
+    width: 100%;
+}
 
 
 /*Discover Page*/
