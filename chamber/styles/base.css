@@ -551,6 +551,7 @@ main {
 
 #gif {
     width: 100%;
+    display: none;
 }
 
 #gifPic {
