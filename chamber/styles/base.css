@@ -610,6 +610,10 @@ figcaption {
     grid-column: 1/4;
     margin: 0 auto;
   }
+
+  #membershipLevels {
+    grid-column: 2/3;
+  }
   
   label {
     display: block;
@@ -651,6 +655,47 @@ figcaption {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+
+  .membershipBox {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+  .memList {
+    list-style: none;
+  }
+
+.membershipTitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: #fff;
+}
+
+.basicMembershipTitle {
+    background-color: #CD7F32;
+}
+
+.silverMembershipTitle {
+    background-color: silver;
+}
+
+.goldMembershipTitle {
+    background-color: gold;
+}
+
+.membershipDescription {
+    margin-bottom: 40px;
+    text-decoration: underline;
+}
+
+.membershipBenefit {
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
 
   /*Thank you page*/
 
