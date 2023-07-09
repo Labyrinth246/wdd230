@@ -1,0 +1,75 @@
+[
+    {
+      "name": "Feltner Brothers",
+      "address": "2768 N College Ave, Fayetteville, AR 72701",
+      "phone": "+1 (479)-935-4545",
+      "website": "https://www.feltnerbrothers.com/",
+      "image": "feltner.png",
+      "membership": "Gold"
+    },
+    {
+      "name": "McGarrah Farms Rivercrest Orchard, LLC",
+      "address": "2991 Dead Horse Mountain Rd, Fayetteville, AR 72701",
+      "phone": "+1 (479)-208-2692",
+      "website": "http://rivercrestorchard.com/",
+      "image": "orchard.png",
+      "membership": "Silver"
+    },
+    {
+      "name": "Mt. Sequoyah",
+      "address": "356 W Skyline Dr, Fayetteville, AR 72701",
+      "phone": "+1 (479)-443-4531",
+      "website": "https://mountsequoyah.org/",
+      "image": "sequoyah.png",
+      "membership": "Bronze"
+    },
+    {
+      "name": "Arkansas Air and Military Museum",
+      "address": "4290 S School Ave, Fayetteville, AR 72701",
+      "phone": "+1 (479)-521-4947",
+      "website": "http://www.arkansasairandmilitary.com/",
+      "image": "airmuseum.png",
+      "membership": "Gold"
+    },
+    {
+      "name": "Northwest Arkansas Mall",
+      "address": "4201 N Shiloh Dr, Fayetteville, AR 72701",
+      "phone": "+1 (479)-521-6151",
+      "website": "https://www.northwestarkansasmall.com/",
+      "image": "mall-logo.png",
+      "membership": "Silver"
+    },
+    {
+      "name": "White River Nursery",
+      "address": "5635 E Huntsville Rd, Fayetteville, AR 72701",
+      "phone": "+1 (479)-442-2061",
+      "website": "https://www.whiterivernurseryar.com/",
+      "image": "whiteRiver.png",
+      "membership": "Bronze"
+    },
+    {
+      "name": "Catfish Hole Fayetteville",
+      "address": "4127 W Wedington Dr, Fayetteville, AR 72701",
+      "phone": "+1 (479)-521-7008",
+      "website": "http://www.thecatfishhole.com/fayetteville-menu.html",
+      "image": "catfish.png",
+      "membership": "Gold"
+    },
+    {
+      "name": "Double Springs Storage",
+      "address": "406 N Double Springs Rd, Fayetteville, AR 72701",
+      "phone": "+1 (479)-521-2772",
+      "website": "http://www.doublespringsstorage.com/",
+      "image": "storage.png",
+      "membership": "Silver"
+    },
+    {
+      "name": "ARMI Contractors",
+      "address": "10576 S Harris Dr, Fayetteville, AR 72701",
+      "phone": "+1 (479)-443-6506",
+      "website": "http://www.armicontractors.com/",
+      "image": "armi.png",
+      "membership": "Bronze"
+    }
+  ]
+  

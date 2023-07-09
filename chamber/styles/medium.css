@@ -1,4 +1,4 @@
-@media only screen and (min-width: 45em) {
+@media only screen and (min-width: 40em) {
     #overlay {
         display: none;
     }
@@ -209,4 +209,19 @@
     #pthanks {
         font-size: large;
     }
+
+    /*Discovery Page*/
+
+    .gridContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+      }
+
+      .listItem {
+        display: grid;
+        grid-template-columns: 40% 30% 30%;
+        grid-template-rows: 1fr;
+        margin-right: 30px;
+      }
 }

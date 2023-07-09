@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="wadth=device-width">
-    <title>Fayetteville Chamber of Commerce Join Page</title>
+    <title>Fayetteville Chamber of Commerce Business Directory</title>
     <meta name="author" content="Spencer Baker">
-    <meta name="description" content="Join page for the Fayetteville, Arkansas Chamber of Commerce Website">
+    <meta name="description" content="Business Directory for the Fayetteville, Arkansas Chamber of Commerce Website">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -76,7 +76,7 @@
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
-            </div>
+              </div>
         </div>
         <div id="socialDiv">
             <a class="socialA" href=""><img class="social" src="images/instagram.png" alt="instagram icon"></a>
@@ -87,82 +87,14 @@
 
 
     <main>
-        <h1 id="joinTitle">Membership Form</h1>
-            <form id="membershipForm" method="get" action="thankyou.html">
-
-
-                <label for="firstName">First Name</label>
-                <input type="text" id="firstName" name="firstName" required>
-                
-                <label for="lastName">Last Name</label>
-                <input type="text" id="lastName" name="lastName" required>
-                
-                <label for="position">Business Position Title</label>
-                <input type="text" id="position" name="position" pattern="[A-Za-z\s\-]{7,}">
-                
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required placeholder="example@gmail.com">
-                
-                <label for="phone">Cell Phone Number</label>
-                <input type="tel" id="phone" name="phone" required>
-                
-                <label for="business">Business Name/Title</label>
-                <input type="text" id="business" name="business" required>
-
-                
-                <label for="membership">Membership Level</label>
-                <select id="membership" name="membership">
-                    <option value="default" selected disabled hidden>Select Membership Level</option>
-                    <option value="nonprofit">NP Membership (Non-profit)</option>
-                    <option value="bronze">Bronze Membership</option>
-                    <option value="silver">Silver Membership</option>
-                    <option value="gold">Gold Membership</option>
-                </select>
-                
-                <label for="description">Business Description</label>
-                <textarea id="description" name="description" rows="4"></textarea>
-                
-                <input type="hidden" name="submissionTime" id="submissionTime">
-                
-                <input id="btnsubmit" type="submit" value="Submit">
-
-            </form>
-
-            <section id="membershipLevels">
-                <h2>Membership Levels and Benefits</h2>
-                    <div class="membershipBox">
-                        <h3 class="membershipTitle basicMembershipTitle">Basic Membership</h3>
-                        <p class="membershipDescription">As a Basic Member of our Chamber of Commerce, you will enjoy the following benefits:</p>
-                        <ul class="memList">
-                            <li class="membershipBenefit">Access to networking events and business seminars</li>
-                            <li class="membershipBenefit">Listing in the online business directory</li>
-                            <li class="membershipBenefit">Subscription to our monthly newsletter</li>
-                            <li class="membershipBenefit">10% discount on chamber-sponsored events</li>
-                        </ul>
-                    </div>
-                    <div class="membershipBox">
-                        <h3 class="membershipTitle silverMembershipTitle">Silver Membership</h3>
-                        <p class="membershipDescription">Upgrade to our Silver Membership to receive enhanced benefits:</p>
-                        <ul class="memList">
-                            <li class="membershipBenefit">All benefits of Basic Membership</li>
-                            <li class="membershipBenefit">Premium listing in the online business directory</li>
-                            <li class="membershipBenefit">Recognition on our website and social media platforms</li>
-                            <li class="membershipBenefit">Invitation to exclusive networking events</li>
-                            <li class="membershipBenefit">15% discount on chamber-sponsored events</li>
-                        </ul>
-                    </div>
-                    <div class="membershipBox">
-                        <h3 class="membershipTitle goldMembershipTitle">Gold Membership</h3>
-                        <p class="membershipDescription">Our prestigious Gold Membership offers the highest level of benefits for businesses:</p>
-                        <ul class="memList">
-                            <li class="membershipBenefit">All benefits of Silver Membership</li>
-                            <li class="membershipBenefit">Featured placement in the online business directory</li>
-                            <li class="membershipBenefit">Opportunity to showcase your business at chamber events</li>
-                            <li class="membershipBenefit">Promotion in our newsletter and press releases</li>
-                            <li class="membershipBenefit">20% discount on chamber-sponsored events</li>
-                        </ul>
-                    </div>
-            </section>
+        <div id="busContainer">
+            <h2>Business Directory</h2>
+            <div id="viewSwitch">
+                <button class="directoryButton" id="listViewButton"><span>&#x2630</span> List View</button>
+                <button class="directoryButton" id="cardViewButton"><span>&#x2637</span> Card View</button>
+            </div>
+            <div class="directoryContainer" id="directoryContainer"></div>
+        </div>
     </main>
 
 
@@ -185,6 +117,6 @@
         </p>
     </footer>
 
-    <script src="scripts/join.js"></script>
-</body>
-</html>
+    <script src="scripts/directory.js"></script>
+    </body>
+    </html>
