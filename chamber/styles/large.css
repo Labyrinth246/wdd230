@@ -186,4 +186,8 @@
       #boardMembers {
         flex-wrap: nowrap;
       }
+
+      #message {
+        width: 700px;
+      }
 }

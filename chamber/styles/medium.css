@@ -232,4 +232,8 @@
         flex-direction: row;
         flex-wrap: wrap;
       }
+
+      #message {
+        width: 550px;
+      }
 }

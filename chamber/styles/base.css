@@ -808,3 +808,7 @@ figcaption {
     margin: 40px;
     border-radius: 10px;
   }
+
+  #message {
+    width: 100%;
+  }
