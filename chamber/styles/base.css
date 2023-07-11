@@ -327,8 +327,8 @@ main {
     width: 50%;
     position: absolute;
     padding: 8px;
-    margin-left: 3%;
-    margin-top: 10%;
+    margin-left: 18%;
+    margin-top: 15%;
     z-index: 1;
 }
 
@@ -338,8 +338,8 @@ main {
     position: absolute;
     background-color: #1D2731;
     padding: 8px;
-    margin-left: 6%;
-    margin-top: 10%;
+    margin-left: 20%;
+    margin-top: 15%;
     border-radius: 10px;
     opacity: 0.6;
     z-index: 1;

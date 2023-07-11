@@ -25,9 +25,10 @@
     }
 
     #background {
-        width: 35%;
+        width: 25%;
         height: 15%;
         margin-top: 7.5%;
+        margin-left: 25%;
     }
 
     /* Main Content */
@@ -43,7 +44,7 @@
     /*Banner and Action*/
 
     #action p {
-        margin-left: 6%;
+        margin-left: 20%;
     }
 
     #action {
