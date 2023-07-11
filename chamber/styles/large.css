@@ -180,4 +180,10 @@
         grid-template-rows: 1fr;
         margin-right: 30px;
       }
+
+      /*Contact Page*/
+
+      #boardMembers {
+        flex-wrap: nowrap;
+      }
 }

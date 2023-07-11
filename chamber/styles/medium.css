@@ -224,4 +224,12 @@
         grid-template-rows: 1fr;
         margin-right: 30px;
       }
+
+      /*cONTACT pAGE*/
+
+      #boardMembers {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
 }

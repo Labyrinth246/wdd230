@@ -784,5 +784,27 @@ figcaption {
     grid-column: 1/4;
     grid-row: 1/4;
   }
+
+
+  /*Contact Page*/
+
+  #theBoard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 1/4;
+  }
   
-  
+  #boardMembers {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contactCard {
+    background-color: #FFFDFD;
+    color: #000000;
+    box-shadow: 0px 8px 16px 0px #328CC1;
+    padding: 20px;
+    margin: 40px;
+    border-radius: 10px;
+  }

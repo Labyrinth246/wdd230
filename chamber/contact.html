@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -64,8 +65,54 @@
 
 
     <main>
-        <h1 class="thanks">Thank You!</h1>
-            <p class="thanks" id="pthanks">Thank you! We appreciate your business. We will review your information and get back to you shortly.</p>
+        <div id="theBoard">
+            <h1 id="contactTitle">Board Members</h1>
+                <div id="boardMembers">
+                    <div class="contactCard">
+                        <h3>Spencer Baker</h3>
+                        <img src="images/contact/spencer.jpg" alt="profile pic for Spencer Baker">
+                    </div>
+
+                    <div class="contactCard">
+                        <h3>Clarissa Jack</h3>
+                        <img src="images/contact/clarissa.jpg" alt="profile pic for Clarissa Jack">
+                    </div>
+
+                    <div class="contactCard">
+                        <h3>Amy Baker</h3>
+                        <img src="images/contact/amy.jpg" alt="profile pic for Amy Baker">
+                    </div>
+
+                    <div class="contactCard">
+                        <h3>Jayce Robinson</h3>
+                        <img src="images/contact/jayce.jpg" alt="profile pic for Jayce Robinson">
+                    </div>
+
+                    <div class="contactCard">
+                        <h3>Hannah Abbert</h3>
+                        <img src="images/contact/hannah.jpg" alt="profile pic for Hannah Abbert">
+                    </div>
+                </div>
+            
+
+            <div class="contactForm">  
+                <form method="get" action="thankyou.html">
+
+                    <label for="fname">First Name:</label>
+                    <input id="fname" name="firstname" required>
+
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input id="phoneNumber" name="phoneNumber" placeholder="No non-number characters" required>
+
+                    <label for="email">Email Address:</label>
+                    <input id="email" type="email" name="emailaddress" placeholder="example@gmail.com" required>
+
+                    <label for="message">What would you like to say?</label>
+                    <textarea placeholder="Message" required></textarea>
+                    <input type="submit" value="Submit" id="submit">
+                </form>
+            </div>
+        </div>
     </main>
 
 
@@ -88,7 +135,6 @@
         </p>
     </footer>
 
-    <script src="scripts/index.js"></script>
-    <script src="scripts/discover.js"></script>
-</body>
-</html>
+    <script src="scripts/directory.js"></script>
+    </body>
+    </html>
