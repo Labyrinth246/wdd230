@@ -677,14 +677,17 @@ figcaption {
 
 .basicMembershipTitle {
     background-color: #CD7F32;
+    color: black;
 }
 
 .silverMembershipTitle {
     background-color: silver;
+    color: black;
 }
 
 .goldMembershipTitle {
     background-color: gold;
+    color: black;
 }
 
 .membershipDescription {
