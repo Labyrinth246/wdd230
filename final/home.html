@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Bountiful Foods</title>
+  <meta name="author" content="Spencer Baker">
+  <meta name="description" content="Bountiful Foods Co. Website">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/large.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header id="siteHeader">
+      <div id="socialMedia">
+        <a href="https://www.instagram.com"><img class="social" src="images/instagram.png" alt="instagram icon"></a>
+        <a href="https://www.facebook.com"><img class="social" src="images/facebook.png" alt="facebook icon"></a>
+        <a href="https://www.twitter.com"><img class="social" src="images/twitter.png" alt="twitter icon"></a>
+      </div>
+
+      <a id="navLogo" href="home.html"><img id="nLogo" src="images/logo2.png" alt="logo"></a>
+
+      <nav id="nav">
+            <ul id="navList">
+                <li><a href="home.html"><button class="navButton">Home</button></a></li>
+                <li><a href="fresh.html"><button class="navButton">Fresh</button></a></li>
+                <li><a href="aboutus.html"><button class="navButton">About Us</button></a></li>
+            </ul>
+      </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div id="heroContainer">
+      <img id="heroPic" src="images/hero5.jpg" alt="beach in carlsbad">
+      <div id="banner">
+        <h1 id="ourMission">A Better You, A Better Earth</h1>
+        <p id="callToAction">Fresh, Natural, and Delicious products from local farms to help you and our earth!</p>
+        <a id="getStarted" href="fresh.html"><button id="getStartedButton">Get Started</button></a>
+      </div>
+    </div>
+
+    <!-- Thumbnail Bar -->
+    <div class="thumbnailBar">
+      <div class="thumbnails">
+        <img src="images/thumbnails/mall-logo.png" alt="Image 1">
+        <img src="images/thumbnails/orchard.png" alt="Image 2">
+        <img src="images/thumbnails/sequoyah.png" alt="Image 3">
+        <img src="images/thumbnails/storage.png" alt="Image 4">
+        <img src="images/thumbnails/whiteRiver.png" alt="Image 5">
+      </div>
+    </div>
+
+    <!-- Transitioning Bar -->
+    <div class="transitionBar">
+      <span class="arrow arrowLeft">&#x21E6</span>
+      <div class="images">
+        <img src="images/TransitionBar/mall-logo.png" alt="Image 1">
+        <img src="images/TransitionBar/orchard.png" alt="Image 2">
+        <img src="images/TransitionBar/sequoyah.png" alt="Image 3">
+        <img src="images/TransitionBar/storage.png" alt="Image 4">
+        <img src="images/TransitionBar/whiteRiver.png" alt="Image 5">
+      </div>
+      <span class="arrow arrowRight">&#x21E8</span>
+    </div>
+
+    <div id="extraContainer">
+      <div id="weather">
+        <h2 id="weatherTitle">Weather</h2>
+
+        <img id="weatherImage" src="" alt="weather cloud image">
+        <h3 id="degrees"><span id="temp"></span>°F</h3>
+        <h3 id="conditions"></h3>
+        <div id="weatherBar"></div>
+        <p id="wind">Wind Speed: <br> Wind Chill:</p>
+        <p><span id="windSpeed"></span> mph<br><span id="result"></span>°F</p>
+      </div>
+
+      <div id="bountifulFoods">
+        <h2 id="businessInfoTitle">Bountiful Foods Co.</h2>
+        <img id="carlsbadImg" src="images/carlsbad.jpg" alt="image of Carlsbad, CA">
+        <p id="description">
+            Bountiful Foods is a small business based in Carlsbad, California, specializing in organic, locally grown foods. We have food trucks that cover the coastal area from Los Angeles to San Diego. Our mission is to provide fresh and healthy food options, including made-to-order fruit drinks and fruit bags. We source produce directly from local farmers and also work with national and international suppliers. Visit our storefront or order through our website for convenient delivery. Experience the organic bounty and indulge in wholesome, natural ingredients that support healthy eating.
+        </p>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div id="contactInfo">
+        <a href="https://www.google.com/maps/place/Carlsbad,+CA/@33.1307201,-117.3307208,13.5z/data=!4m6!3m5!1s0x80dc73453f3bee59:0xa4cb5592fcf65d2f!8m2!3d33.1580933!4d-117.3505939!16zL20vMHI0d24?entry=ttu">Carlsbad, CA</a>
+        <p>Call Us: (777)-777-7777</p>
+        <p>bountiful.foods@gmail.com</p>
+    </div>
+
+    <p id="copyright">
+        @<span id="date"></span> | Bountiful Foods Co. | Spencer Baker |<br> Last Updated: <span id="lastEdit"></span>
+    </p>
+
+    <a id="footLogo" href="home.html"><img id="fLogo" src="images/logo.png" alt="Bountiful Foods logo"></a>
+</footer>
+
+<script src="scripts/home.js"></script>
+<script src="scripts/weather.js"></script>
+</body>
+
+</html>
