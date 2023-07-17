@@ -50,23 +50,28 @@
     <!-- Thumbnail Bar -->
     <div class="thumbnailBar">
       <div class="thumbnails">
-        <img src="images/thumbnails/mall-logo.png" alt="Image 1">
-        <img src="images/thumbnails/orchard.png" alt="Image 2">
-        <img src="images/thumbnails/sequoyah.png" alt="Image 3">
-        <img src="images/thumbnails/storage.png" alt="Image 4">
-        <img src="images/thumbnails/whiteRiver.png" alt="Image 5">
+        <img src="images/transitions/legoland.jpg" alt="legoland thumbnail">
+        <img src="images/transitions/lajolla.jpg" alt="la jolla thumbnail">
+        <img src="images/transitions/gardens.jpg" alt="botanical gardens thumbnail">
+        <img src="images/transitions/flowers.jpg" alt="flower fields thumbnail">
+        <img src="images/transitions/college.jpg" alt="university thumbnail">
       </div>
+    </div>
+
+    <div id="bodyTitle">
+      <h2>Welcome to Carlsbad, California!</h2>
+      <p id="titleP">There is so much to enjoy here!</p>
     </div>
 
     <!-- Transitioning Bar -->
     <div class="transitionBar">
       <span class="arrow arrowLeft">&#x21E6</span>
       <div class="images">
-        <img src="images/TransitionBar/mall-logo.png" alt="Image 1">
-        <img src="images/TransitionBar/orchard.png" alt="Image 2">
-        <img src="images/TransitionBar/sequoyah.png" alt="Image 3">
-        <img src="images/TransitionBar/storage.png" alt="Image 4">
-        <img src="images/TransitionBar/whiteRiver.png" alt="Image 5">
+        <img alt="legoland picture">
+        <img alt="la jolla california">
+        <img alt="san diego botanical gardens">
+        <img alt="carlsbad flower fields">
+        <img alt="University of California, Irvine">
       </div>
       <span class="arrow arrowRight">&#x21E8</span>
     </div>
@@ -74,13 +79,16 @@
     <div id="extraContainer">
       <div id="weather">
         <h2 id="weatherTitle">Weather</h2>
-
         <img id="weatherImage" src="" alt="weather cloud image">
-        <h3 id="degrees"><span id="temp"></span>°F</h3>
-        <h3 id="conditions"></h3>
-        <div id="weatherBar"></div>
-        <p id="wind">Wind Speed: <br> Wind Chill:</p>
-        <p><span id="windSpeed"></span> mph<br><span id="result"></span>°F</p>
+        <div id="currentWeather">
+          <h3 id="currentTemp"><span id="currentTempValue"></span>°F</h3>
+          <h3 id="conditions"></h3>
+          <p id="humidity">Humidity: <span id="humidityValue"></span>%</p>
+        </div>
+        <div id="forecast">
+          <h3 id="forecastTitle">Forecast</h3>
+          <div id="forecastContainer"></div>
+        </div>
       </div>
 
       <div id="bountifulFoods">
@@ -91,6 +99,8 @@
         </p>
       </div>
     </div>
+
+    <div id="infoCard"></div>
 
   </main>
 

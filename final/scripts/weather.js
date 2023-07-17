@@ -1,35 +1,69 @@
-async function fetchWeatherData() {
-    try {
-      const response = await fetch('http://api.openweathermap.org/data/2.5/weather?q=Carlsbad&units=imperial&appid=004fbdf69e3f2d633b1e0fee1166eacb');
-      const data = await response.json();
-  
+async function fetchCurrentWeatherData() {
+  try {
+    const response = await fetch('http://api.openweathermap.org/data/2.5/weather?q=Carlsbad&units=imperial&appid=004fbdf69e3f2d633b1e0fee1166eacb');
+    const data = await response.json();
 
-      const tempElement = document.getElementById('temp');
-      const conditionElement = document.getElementById('conditions');
-      const weatherImageElement = document.getElementById('weatherImage');
-      const windSpeedElement = document.getElementById('windSpeed');
-      const windChillElement = document.getElementById('result');
-  
-      
-      tempElement.textContent = Math.round(data.main.temp);
-      conditionElement.textContent = data.weather[0].description;
-      weatherImageElement.src = `http://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-      windSpeedElement.textContent = data.wind.speed.toFixed(2);
-  
-      if (data.main.temp <= 50 && data.wind.speed >= 3) {
-        const windChill = calculateWindChill(data.main.temp, data.wind.speed);
-        windChillElement.textContent = Math.round(windChill);
-      } else {
-        windChillElement.textContent = 'N/A';
+    const currentTempElement = document.getElementById('currentTempValue');
+    const conditionsElement = document.getElementById('conditions');
+    const weatherImageElement = document.getElementById('weatherImage');
+    const humidityValueElement = document.getElementById('humidityValue');
+
+    currentTempElement.textContent = Math.round(data.main.temp);
+    weatherImageElement.src = `http://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    conditionsElement.textContent = data.weather[0].description;
+    humidityValueElement.textContent = data.main.humidity;
+  } catch (error) {
+    console.log('An error occurred while fetching the current weather data:', error);
+  }
+}
+
+async function fetchForecastData() {
+  try {
+    const response = await fetch('http://api.openweathermap.org/data/2.5/forecast?q=Carlsbad&units=imperial&cnt=4&appid=004fbdf69e3f2d633b1e0fee1166eacb');
+    const data = await response.json();
+
+    const forecastContainer = document.getElementById('forecastContainer');
+    forecastContainer.innerHTML = '';
+
+    const currentDate = new Date();
+    currentDate.setHours(0, 0, 0, 0);
+
+    for (let i = 1; i <= 3; i++) {
+      const forecast = data.list[i];
+      const date = new Date(forecast.dt * 1000);
+      date.setHours(0, 0, 0, 0);
+
+      if (date.getTime() === currentDate.getTime()) {
+        continue;
       }
-    } catch (error) {
-      console.log('An error occurred while fetching the weather data:', error);
-    }
-  }
-  
-  function calculateWindChill(temperature, windSpeed) {
-    const windChill = 35.74 + 0.6215 * temperature - 35.75 * Math.pow(windSpeed, 0.16) + 0.4275 * temperature * Math.pow(windSpeed, 0.16);
-    return windChill;
-  }
 
-  fetchWeatherData();
+      const temp = forecast.main.temp;
+
+      const forecastItem = document.createElement('div');
+      forecastItem.classList.add('forecastItem');
+
+      const dateElement = document.createElement('h4');
+      dateElement.textContent = getDateString(date);
+      forecastItem.appendChild(dateElement);
+
+      const tempElement = document.createElement('p');
+      tempElement.textContent = `${Math.round(temp)}°F`;
+      forecastItem.appendChild(tempElement);
+
+      forecastContainer.appendChild(forecastItem);
+    }
+  } catch (error) {
+    console.log('An error occurred while fetching the forecast data:', error);
+  }
+}
+
+
+function getDateString(date) {
+  const options = { month: 'short', day: 'numeric' };
+  return date.toLocaleDateString('en-US', options);
+}
+
+// Call the functions to fetch weather data and forecast data
+fetchCurrentWeatherData();
+fetchForecastData();
+

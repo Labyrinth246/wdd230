@@ -22,20 +22,34 @@ function showNextImage() {
 function showImage(index) {
   currentIndex = index;
   
-  // Remove all existing image containers
   while (imagesContainer.firstChild) {
     imagesContainer.firstChild.remove();
   }
   
   const imageContainer = document.createElement('div');
   imageContainer.classList.add('imageContainer');
-  
+
   const image = document.createElement('img');
   image.src = thumbnails[index].src;
   image.alt = thumbnails[index].alt;
   image.classList.add('active');
-  
+
+  const overlay = document.createElement('div');
+  overlay.classList.add('overlay');
+
+  const title = document.createElement('h3');
+  title.textContent = getImageTitle(index);
+  title.classList.add('imageTitle');
+
+  const description = document.createElement('p');
+  description.textContent = getImageDescription(index);
+  description.classList.add('imageDescription');
+
+  overlay.appendChild(title);
+  overlay.appendChild(description);
+
   imageContainer.appendChild(image);
+  imageContainer.appendChild(overlay);
   imagesContainer.appendChild(imageContainer);
   
   thumbnails.forEach((thumbnail, i) => {
@@ -43,9 +57,42 @@ function showImage(index) {
   });
 }
 
-// Show the first image initially
+function getImageTitle(index) {
+  const titles = [
+    'Legoland',
+    'La Jolla',
+    'San Diego Botanical Gardens',
+    'Carlsbad Flower Fields',
+    'University of California, Irvine'
+  ];
+
+  return titles[index];
+}
+
+function getImageDescription(index) {
+  const descriptions = [
+    'A fun-filled day at Legoland ',
+    'Enjoying the beauty of La Jolla',
+    'Exploring the San Diego Botanical Gardens',
+    'Walking through the colorful Carlsbad Flower Fields',
+    'University of California, Irvine campus'
+  ];
+
+  return descriptions[index];
+}
+
 showImage(0);
 
+
+let drinkCount = parseInt(localStorage.getItem('drinkCount')) || 0;
+function updateDrinkCount() {
+  drinkCount++;
+  localStorage.setItem('drinkCount', drinkCount.toString());
+  const infoCard = document.getElementById('infoCard');
+  infoCard.textContent = `You have submitted ${drinkCount} specialty drinks.`;
+}
+
+updateDrinkCount();
 
 
 

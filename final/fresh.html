@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Bountiful Foods - Fresh</title>
+  <meta name="author" content="Spencer Baker">
+  <meta name="description" content="Bountiful Foods Co. Website">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/large.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header id="siteHeader">
+    <div id="socialMedia">
+      <a href="https://www.instagram.com"><img class="social" src="images/instagram.png" alt="instagram icon"></a>
+      <a href="https://www.facebook.com"><img class="social" src="images/facebook.png" alt="facebook icon"></a>
+      <a href="https://www.twitter.com"><img class="social" src="images/twitter.png" alt="twitter icon"></a>
+    </div>
+
+    <a id="navLogo" href="home.html"><img id="nLogo" src="images/logo2.png" alt="logo"></a>
+
+    <nav id="nav">
+          <ul id="navList">
+              <li><a href="home.html"><button class="navButton">Home</button></a></li>
+              <li><a href="fresh.html"><button class="navButton">Fresh</button></a></li>
+              <li><a href="aboutus.html"><button class="navButton">About Us</button></a></li>
+          </ul>
+    </nav>
+</header>
+
+  <main>
+    <div id="freshContainer">
+      <h2 id="freshTitle">Build Your Own Specialty Drink</h2>
+      <form id="freshForm">
+        <div class="formGroup">
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" required>
+        </div>
+
+        <div class="formGroup">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="formGroup">
+          <label for="phoneNumber">Phone Number:</label>
+          <input type="tel" id="phoneNumber" name="phoneNumber" required>
+        </div>
+
+        <div class="formGroup">
+          <label for="fruit1">Fruit 1:</label>
+          <select id="fruit1" name="fruit1" required>
+            <!-- Dynamically populate options with fruit data using JavaScript -->
+          </select>
+        </div>
+
+        <div class="formGroup">
+          <label for="fruit2">Fruit 2:</label>
+          <select id="fruit2" name="fruit2" required>
+            <!-- Dynamically populate options with fruit data using JavaScript -->
+          </select>
+        </div>
+
+        <div class="formGroup">
+          <label for="fruit3">Fruit 3:</label>
+          <select id="fruit3" name="fruit3" required>
+            <!-- Dynamically populate options with fruit data using JavaScript -->
+          </select>
+        </div>
+
+        <div class="formGroup">
+          <label for="specialInstructions">Special Instructions:</label>
+          <textarea id="specialInstructions" name="specialInstructions" rows="3"></textarea>
+        </div>
+
+        <button type="submit" id="submitBtn">Submit</button>
+      </form>
+
+      <div id="orderOutput" style="display: none;">
+        <h3>Order Details:</h3>
+        <div id="orderInfo"></div>
+        <h3>Order Date:</h3>
+        <p id="orderDate"></p>
+        <h3>Nutritional Information:</h3>
+        <div id="nutritionalInfo"></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div id="contactInfo">
+        <a href="https://www.google.com/maps/place/Carlsbad,+CA/@33.1307201,-117.3307208,13.5z/data=!4m6!3m5!1s0x80dc73453f3bee59:0xa4cb5592fcf65d2f!8m2!3d33.1580933!4d-117.3505939!16zL20vMHI0d24?entry=ttu">Carlsbad, CA</a>
+        <p>Call Us: (777)-777-7777</p>
+        <p>bountiful.foods@gmail.com</p>
+    </div>
+
+    <p id="copyright">
+        @<span id="date"></span> | Bountiful Foods Co. | Spencer Baker |<br> Last Updated: <span id="lastEdit"></span>
+    </p>
+
+    <a id="footLogo" href="home.html"><img id="fLogo" src="images/logo.png" alt="Bountiful Foods logo"></a>
+</footer>
+
+  <script src="scripts/fresh.js"></script>
+</body>
+
+</html>
