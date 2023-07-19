@@ -69,7 +69,6 @@ function getDateString(date) {
   return date.toLocaleDateString('en-US', options);
 }
 
-// Call the functions to fetch weather data and forecast data
 fetchCurrentWeatherData();
 fetchForecastData();
 

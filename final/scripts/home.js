@@ -56,12 +56,11 @@ function showImage(index) {
     thumbnail.classList.toggle('active', i === currentIndex);
   });
 
-  // Lazy load the image when it enters the viewport
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         const img = entry.target;
-        img.src = img.dataset.src; // Load the image source
+        img.src = img.dataset.src;
         img.classList.remove('loading');
         observer.unobserve(img);
       }
