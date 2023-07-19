@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>About Us - Bountiful Foods</title>
+  <meta name="author" content="Spencer Baker">
+  <meta name="description" content="Bountiful Foods Co. About Us">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/large.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header id="siteHeader">
+    <div id="socialMedia">
+      <a href="https://www.instagram.com"><img class="social" src="images/instagram.png" alt="instagram icon"></a>
+      <a href="https://www.facebook.com"><img class="social" src="images/facebook.png" alt="facebook icon"></a>
+      <a href="https://www.twitter.com"><img class="social" src="images/twitter.png" alt="twitter icon"></a>
+    </div>
+
+    <a id="navLogo" href="home.html"><img id="nLogo" src="images/logo2.png" alt="logo"></a>
+
+    <nav id="nav">
+      <ul id="navList">
+        <li><a href="home.html"><button class="navButton">Home</button></a></li>
+        <li><a href="fresh.html"><button class="navButton">Fresh</button></a></li>
+        <li><a href="aboutus.html"><button class="navButton active">About Us</button></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div id="aboutContainer">
+
+      <h1 id="aboutTitle">About Us</h1>
+
+      <div id="history">
+        <h2 id="historyTitle">Our History</h2>
+        <p id="historyText">
+          Bountiful Foods is a small business based in Carlsbad, California, specializing in organic, locally grown foods. We started our journey in 2005 with a mission to provide fresh and healthy food options to our community. Over the years, we have built strong relationships with local farmers and suppliers, allowing us to offer the highest quality products to our customers.
+        </p>
+      </div>
+
+      <div id="historyPic">
+        <img loading="lazy" src="images/bountiful.jpg" alt="farmers market picture">
+      </div>
+
+      <div id="contactInfo">
+        <h2 id="contactTitle">Contact Information</h2>
+        <div id="contactDetail">
+            <p>2907 State St, Carlsbad, CA 92008</p>
+            <p>Phone: (777)-777-7777</p>
+            <p>bountiful.foods@gmail.com</p>
+        </div>
+      </div>
+
+      <div id="map">
+        <h2 id="mapTitle">Visit Us</h2>
+        <div id="googleMap"></div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div id="contactInfo">
+      <a href="https://www.google.com/maps/place/Carlsbad,+CA/@33.1307201,-117.3307208,13.5z/data=!4m6!3m5!1s0x80dc73453f3bee59:0xa4cb5592fcf65d2f!8m2!3d33.1580933!4d-117.3505939!16zL20vMHI0d24?entry=ttu">Carlsbad, CA</a>
+      <p>Call Us: (777)-777-7777</p>
+      <p>bountiful.foods@gmail.com</p>
+    </div>
+
+    <p id="copyright">
+      @<span id="date"></span> | Bountiful Foods Co. | Spencer Baker |<br> Last Updated: <span id="lastEdit"></span> <br> <a href="references.html">References Page</a>
+    </p>
+
+    <a id="footLogo" href="home.html"><img id="fLogo" src="images/logo.png" alt="Bountiful Foods logo"></a>
+  </footer>
+
+  <script src="scripts/aboutus.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQKJGkU2X99HmQve8xyNx7Du_kAJ1GOcA&callback=initMap" async defer></script>
+</body>
+
+</html>

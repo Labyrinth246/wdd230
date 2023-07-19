@@ -31,7 +31,7 @@
             <ul id="navList">
                 <li><a href="home.html"><button class="navButton">Home</button></a></li>
                 <li><a href="fresh.html"><button class="navButton">Fresh</button></a></li>
-                <li><a href="aboutus.html"><button class="navButton">About Us</button></a></li>
+                <li><a href="aboutus.html"><button class="navButton" id="aboutButton">About Us</button></a></li>
             </ul>
       </nav>
   </header>
@@ -39,7 +39,9 @@
   <!-- Main Content -->
   <main>
     <div id="heroContainer">
-      <img id="heroPic" src="images/hero5.jpg" alt="beach in carlsbad">
+      <div id="heroPicContainer">
+        <img loading="lazy" id="heroPic" src="images/hero5.jpg" alt="beach in carlsbad">
+      </div>
       <div id="banner">
         <h1 id="ourMission">A Better You, A Better Earth</h1>
         <p id="callToAction">Fresh, Natural, and Delicious products from local farms to help you and our earth!</p>
@@ -50,11 +52,16 @@
     <!-- Thumbnail Bar -->
     <div class="thumbnailBar">
       <div class="thumbnails">
-        <img src="images/transitions/legoland.jpg" alt="legoland thumbnail">
-        <img src="images/transitions/lajolla.jpg" alt="la jolla thumbnail">
-        <img src="images/transitions/gardens.jpg" alt="botanical gardens thumbnail">
-        <img src="images/transitions/flowers.jpg" alt="flower fields thumbnail">
-        <img src="images/transitions/college.jpg" alt="university thumbnail">
+        <img loading="lazy" src="images/transitions/legoland.jpg" sizes="100vw" alt="legoland thumbnail"
+        srcset="images/trasitions/legoland.jpg 1920w, images/transitions/legolandMedium.jpg 1024w, images/transitions/legolandSmall.jpg 640w">
+        <img loading="lazy" src="images/transitions/lajolla.jpg" sizes="100vw" alt="la jolla thumbnail"
+        srcset="images/trasitions/lajolla.jpg 1920w, images/transitions/lajollaMedium.jpg 1024w, images/transitions/lajollaSmall.jpg 640w">
+        <img loading="lazy" src="images/transitions/gardens.jpg" sizes="100vw" alt="botanical gardens thumbnail"
+        srcset="images/trasitions/gardens.jpg 1920w, images/transitions/gardensMedium.jpg 1024w, images/transitions/gardensSmall.jpg 640w">
+        <img loading="lazy" src="images/transitions/flowers.jpg" sizes="100vw" alt="flower fields thumbnail"
+        srcset="images/trasitions/flowers.jpg 1920w, images/transitions/flowersMedium.jpg 1024w, images/transitions/flowersSmall.jpg 640w">
+        <img loading="lazy" src="images/transitions/college.jpg" sizes="100vw" alt="university thumbnail"
+        srcset="images/trasitions/college.jpg 1920w, images/transitions/collegeMedium.jpg 1024w, images/transitions/collegeSmall.jpg 640w">
       </div>
     </div>
 
@@ -67,11 +74,11 @@
     <div class="transitionBar">
       <span class="arrow arrowLeft">&#x21E6</span>
       <div class="images">
-        <img alt="legoland picture">
-        <img alt="la jolla california">
-        <img alt="san diego botanical gardens">
-        <img alt="carlsbad flower fields">
-        <img alt="University of California, Irvine">
+        <img loading="lazy" alt="legoland picture">
+        <img loading="lazy" alt="la jolla california">
+        <img loading="lazy" alt="san diego botanical gardens">
+        <img loading="lazy" alt="carlsbad flower fields">
+        <img loading="lazy" alt="University of California, Irvine">
       </div>
       <span class="arrow arrowRight">&#x21E8</span>
     </div>
@@ -93,15 +100,16 @@
 
       <div id="bountifulFoods">
         <h2 id="businessInfoTitle">Bountiful Foods Co.</h2>
-        <img id="carlsbadImg" src="images/carlsbad.jpg" alt="image of Carlsbad, CA">
+        <img loading="lazy" id="carlsbadImg" src="images/carlsbad.jpg" alt="image of Carlsbad, CA">
         <p id="description">
-            Bountiful Foods is a small business based in Carlsbad, California, specializing in organic, locally grown foods. We have food trucks that cover the coastal area from Los Angeles to San Diego. Our mission is to provide fresh and healthy food options, including made-to-order fruit drinks and fruit bags. We source produce directly from local farmers and also work with national and international suppliers. Visit our storefront or order through our website for convenient delivery. Experience the organic bounty and indulge in wholesome, natural ingredients that support healthy eating.
+            Bountiful Foods is a small business based in Carlsbad, California, specializing in organic, locally grown foods. Our mission is to provide fresh and healthy food options, including made-to-order fruit drinks and fruit bags. We source produce directly from local farmers and also work with national and international suppliers. Visit our storefront or order through our website for convenient delivery. Experience the organic bounty and indulge in wholesome, natural ingredients that support healthy eating.
         </p>
       </div>
     </div>
 
-    <div id="infoCard"></div>
-
+    <div id="drinkCard">
+      <p>Total Specialty Drinks: <span id="drinkCount"></span></p>
+    </div>
   </main>
 
   <!-- Footer -->
@@ -113,10 +121,10 @@
     </div>
 
     <p id="copyright">
-        @<span id="date"></span> | Bountiful Foods Co. | Spencer Baker |<br> Last Updated: <span id="lastEdit"></span>
+        @<span id="date"></span> | Bountiful Foods Co. | Spencer Baker |<br> Last Updated: <span id="lastEdit"></span> <br> <a href="references.html">References Page</a>
     </p>
 
-    <a id="footLogo" href="home.html"><img id="fLogo" src="images/logo.png" alt="Bountiful Foods logo"></a>
+    <a id="footLogo" href="home.html"><img loading="lazy" id="fLogo" src="images/logo.png" alt="Bountiful Foods logo"></a>
 </footer>
 
 <script src="scripts/home.js"></script>

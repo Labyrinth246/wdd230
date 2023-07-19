@@ -21,16 +21,16 @@ function showNextImage() {
 
 function showImage(index) {
   currentIndex = index;
-  
+
   while (imagesContainer.firstChild) {
     imagesContainer.firstChild.remove();
   }
-  
+
   const imageContainer = document.createElement('div');
   imageContainer.classList.add('imageContainer');
 
   const image = document.createElement('img');
-  image.src = thumbnails[index].src;
+  image.dataset.src = thumbnails[index].src; // Store the image source in a data attribute
   image.alt = thumbnails[index].alt;
   image.classList.add('active');
 
@@ -51,11 +51,26 @@ function showImage(index) {
   imageContainer.appendChild(image);
   imageContainer.appendChild(overlay);
   imagesContainer.appendChild(imageContainer);
-  
+
   thumbnails.forEach((thumbnail, i) => {
     thumbnail.classList.toggle('active', i === currentIndex);
   });
+
+  // Lazy load the image when it enters the viewport
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        img.src = img.dataset.src; // Load the image source
+        img.classList.remove('loading');
+        observer.unobserve(img);
+      }
+    });
+  });
+
+  observer.observe(image);
 }
+
 
 function getImageTitle(index) {
   const titles = [
@@ -84,17 +99,10 @@ function getImageDescription(index) {
 showImage(0);
 
 
-let drinkCount = parseInt(localStorage.getItem('drinkCount')) || 0;
-function updateDrinkCount() {
-  drinkCount++;
-  localStorage.setItem('drinkCount', drinkCount.toString());
-  const infoCard = document.getElementById('infoCard');
-  infoCard.textContent = `You have submitted ${drinkCount} specialty drinks.`;
-}
+const drinkCount = localStorage.getItem('drinkCount') || '0';
 
-updateDrinkCount();
-
-
+const drinkCountElement = document.getElementById('drinkCount');
+drinkCountElement.textContent = drinkCount;
 
 document.getElementById("lastEdit").innerHTML = new Date(document.lastModified).toLocaleString();
 

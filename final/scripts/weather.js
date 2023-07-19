@@ -19,7 +19,7 @@ async function fetchCurrentWeatherData() {
 
 async function fetchForecastData() {
   try {
-    const response = await fetch('http://api.openweathermap.org/data/2.5/forecast?q=Carlsbad&units=imperial&cnt=4&appid=004fbdf69e3f2d633b1e0fee1166eacb');
+    const response = await fetch('http://api.openweathermap.org/data/2.5/forecast?q=Carlsbad&units=imperial&cnt=8&appid=004fbdf69e3f2d633b1e0fee1166eacb');
     const data = await response.json();
 
     const forecastContainer = document.getElementById('forecastContainer');
@@ -28,8 +28,9 @@ async function fetchForecastData() {
     const currentDate = new Date();
     currentDate.setHours(0, 0, 0, 0);
 
-    for (let i = 1; i <= 3; i++) {
-      const forecast = data.list[i];
+    let dayCount = 0;
+
+    for (const forecast of data.list) {
       const date = new Date(forecast.dt * 1000);
       date.setHours(0, 0, 0, 0);
 
@@ -51,6 +52,11 @@ async function fetchForecastData() {
       forecastItem.appendChild(tempElement);
 
       forecastContainer.appendChild(forecastItem);
+
+      dayCount++;
+      if (dayCount === 3) {
+        break;
+      }
     }
   } catch (error) {
     console.log('An error occurred while fetching the forecast data:', error);
