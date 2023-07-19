@@ -23,7 +23,7 @@
   }
 
   a {
-    color:#D5573B;
+    color:#FCCA46;
   }
 
 /* Navigation Styles */
@@ -384,7 +384,7 @@
     margin: 20px;
     justify-self: center;
     background-color: #233D4D;
-    border-radius: 10px
+    border-radius: 10px;
   }
 
 #currentWeather {
