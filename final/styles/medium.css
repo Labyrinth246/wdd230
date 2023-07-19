@@ -1,12 +1,19 @@
 @media only screen and (min-width: 45em) {
   /* Footer Styles */
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+  }
+
   #fLogo {
     width: 75px;
   }
   #copyright {
     font-size: 12px;
   }
-  #contactInfo p{
+  #contactInfoFoot p{
     font-size: 12px;
   }
 
@@ -75,8 +82,9 @@
   
   #weather {
     grid-template-rows: 10% 30% 30%;
-    width: 87%;
+    width: 90%;
     margin: 20px;
+    justify-self: center;
   }
 
   /*Business Info Section*/
@@ -85,6 +93,7 @@
     grid-template-rows: 10% 40% 50%;
     margin: 20px;
     width: 90%;
+    justify-self: center;
   }
   
   #carlsbadImg {
@@ -111,5 +120,33 @@
 
   #drinkCard p {
     color: #233D4D;
+  }
+
+
+  /* Fresh Page */
+    /*Nothing to add*/
+
+  /*About Us Page*/
+
+  #aboutContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #history {
+    margin-left: 0px;
+    margin: 10px;
+  }
+
+  #historyPic img{
+    width: 100%;
+  }
+
+  #map {
+    width: 80%;
+  }
+
+  #contactDetail {
+    margin: 0px 0px;
   }
 }
